@@ -1,0 +1,23 @@
+{
+  "name": "live-preview-middleware",
+  "version": "1.0.0",
+  "description": "",
+  "main": "middleware.tsx",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@contentstack/live-preview-utils": "^1.4.1",
+    "contentstack": "^3.19.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.18.3",
+    "fetch": "^1.1.0",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.30"
+  }
+}
