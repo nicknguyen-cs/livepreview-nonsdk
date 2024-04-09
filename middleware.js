@@ -32,7 +32,6 @@ app.use(express.static(path.join(__dirname, 'front-end/build')));
 
 
 app.use(cors());
-app.use(simpleLogger);
 
 let entryUid = process.env.ENTRY_UID;
 app.get('/live-preview', async (req, res) => {
