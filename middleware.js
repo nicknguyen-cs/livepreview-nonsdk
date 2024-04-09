@@ -62,8 +62,3 @@ app.get('/live-preview', async (req, res) => {
 app.listen(3001, () => {
     console.log('Server is running on port 3001');
 });
-
-function simpleLogger(req, res, next) {
-    console.log(`${new Date().toISOString()} - ${req.method} request to ${req.url}`);
-    next();
-}

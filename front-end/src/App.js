@@ -45,6 +45,13 @@ function ContentFetcher() {
   useEffect(() => {
     fetchData();
 
+    /* This is all you need for using the SDK */
+    onEntryChange(() => {
+      fetchData();
+    })
+
+    /* This is what you need without the SDK */
+    /*
     const messageToContentstack = {
       from: "live-preview",
       type: "init",
@@ -64,6 +71,7 @@ function ContentFetcher() {
         from === "live-preview" &&
         type === "client-data-send" &&
         data.content_type_uid
+        console.log(isPreviewAvailable)
       if (isPreviewAvailable) {
         fetchLivePreviewData(data.hash, data.content_type_uid)
       }
@@ -72,6 +80,7 @@ function ContentFetcher() {
         window.removeEventListener("message", e);
       };
     });
+    */
   }, []); // Empty dependency array means this effect runs only once on mount
 
   if (isLoading) return <div>Loading...</div>;
