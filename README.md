@@ -3,7 +3,7 @@
 
 This project consists of two primary components necessary for the live preview functionality:
 
--   `live-preview-middleware`: The backend service that handles data processing.
+-   `middleware.js`: The backend service that handles data processing.
 -   `front-end`: The user interface for live interaction and display.
 
 ## Getting Started
