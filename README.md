@@ -37,6 +37,8 @@ To set up and run the project locally, follow these steps for each component:
 4.  **Start the Front-end Application**:
         
     `npm run start` 
+
+5.  **Uncomment and comment the SDK or Non-SDK Approach depending on use case.**:
     
 
 ## Content Type Creation
